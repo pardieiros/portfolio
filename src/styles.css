@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles inspired by Aceternity UI look & feel */
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #0b0b0f;
+}
+
+.beams {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(600px 300px at 10% -10%, rgba(80, 124, 255, 0.12), transparent 60%),
+    radial-gradient(600px 300px at 90% 0%, rgba(255, 80, 200, 0.12), transparent 60%);
+  filter: blur(20px);
+}
+
+.spotlight {
+  position: absolute;
+  inset: -25% -10% auto -10%;
+  height: 60vh;
+  background: radial-gradient(40% 60% at 50% 0%, rgba(255, 255, 255, 0.08), transparent 60%);
+  pointer-events: none;
+}
+
+.card {
+  @apply rounded-xl border border-white/10 bg-neutral-900/40 backdrop-blur;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_60px_-20px_rgba(255,255,255,0.2)];
+}
+
+
