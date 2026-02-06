@@ -1,39 +1,40 @@
 import { useTranslation } from "react-i18next";
+import heroLogoSrc from "../../img/ClawDao/semfundocomletras.png";
 
 export default function Hero() {
   const { t } = useTranslation();
   return (
-    <section className="relative overflow-hidden pt-28">
-      <div className="spotlight"></div>
-      <div className="beams"></div>
-      <div className="mx-auto max-w-6xl px-4">
+    <section className="relative overflow-hidden pt-24 sm:pt-28 md:pt-32">
+      <div className="spotlight" aria-hidden />
+      <div className="beams" aria-hidden />
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-4xl font-semibold tracking-tight md:text-6xl">
-            <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-fuchsia-400 bg-clip-text text-transparent">
-              {t("hero.title")}
-            </span>
+          <h1 className="flex justify-center">
+            <img
+              src={heroLogoSrc}
+              alt={t("hero.title")}
+              className="h-20 w-auto sm:h-24 md:h-28 lg:h-32"
+            />
           </h1>
-          <p className="mt-6 text-balance text-neutral-300 md:text-lg">
+          <p className="mt-4 text-balance text-[var(--text-secondary)] sm:mt-6 sm:text-base md:text-lg">
             {t("hero.subtitle")}
           </p>
           <a
             href="#portfolio"
-            className="mt-8 inline-flex items-center justify-center rounded-xl border border-white/10 bg-neutral-900/60 px-5 py-3 text-sm text-white shadow-[0_0_40px_-20px_rgba(255,255,255,0.3)] transition hover:bg-neutral-800/60"
+            className="mt-6 inline-flex items-center justify-center rounded-xl border border-clawdao-cyan/50 bg-clawdao-cyan/10 px-5 py-3 text-sm font-medium text-clawdao-cyan transition-all hover:bg-clawdao-cyan/20 hover:border-clawdao-cyan sm:mt-8"
           >
             {t("hero.cta")}
           </a>
         </div>
-        <div className="pointer-events-none relative mx-auto mt-14 max-w-5xl rounded-2xl border border-white/10 bg-neutral-900/40 p-1 backdrop-blur">
+        <div className="pointer-events-none relative mx-auto mt-10 max-w-5xl rounded-2xl border p-1 backdrop-blur sm:mt-14" style={{ borderColor: "var(--border)", background: "var(--bg-secondary)" }}>
           <img
             src="/img/intro-bg.jpg"
             alt="Intro"
-            className="h-[360px] w-full rounded-2xl object-cover opacity-90"
+            className="h-56 w-full rounded-2xl object-cover opacity-90 sm:h-72 md:h-[360px]"
           />
-          <div className="pointer-events-auto absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10"></div>
+          <div className="pointer-events-auto absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 dark:ring-white/10" aria-hidden />
         </div>
       </div>
     </section>
   );
 }
-
-

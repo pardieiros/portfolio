@@ -28,17 +28,15 @@ export default function PortfolioGrid() {
           <img
             src={item.small}
             alt={item.title}
-            className="h-56 w-full object-cover transition duration-300 group-hover:scale-105"
+            className="h-48 w-full object-cover transition duration-300 group-hover:scale-105 sm:h-56"
             loading="lazy"
           />
           <div className="flex items-center justify-between px-4 py-3">
-            <span className="text-sm text-neutral-200">{item.title}</span>
-            <span className="text-xs text-neutral-400 group-hover:text-neutral-200">Open</span>
+            <span className="text-sm text-[var(--text-primary)]">{item.title}</span>
+            <span className="text-xs text-clawdao-cyan opacity-80 group-hover:opacity-100">Open</span>
           </div>
         </a>
       ))}
     </div>
   );
 }
-
-

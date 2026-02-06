@@ -7,13 +7,12 @@ const resources = {
       nav: {
         portfolio: "Portfolio",
         about: "About",
-        testimonials: "Testimonials",
         contact: "Contact"
       },
       hero: {
-        title: "Full-stack developer building powerful apps and digital systems.",
+        title: "ClawDao — Full-stack development",
         subtitle:
-          "I develop web, mobile and backend solutions using React, Django, Laravel, Flutter and modern DevOps tools such as Docker, Nginx and Proxmox.",
+          "End-to-end solutions: from responsive web apps and mobile applications to scalable backends and APIs. React, Django, Laravel, Flutter — with Docker, Nginx and Proxmox for deployment and infrastructure.",
         cta: "View Work"
       },
       portfolio: {
@@ -25,15 +24,6 @@ const resources = {
         title: "About Me",
         content:
           "I'm a multi-disciplinary developer skilled in frontend, backend and mobile development. I work with React, Django, Flask, Laravel, Flutter and TypeScript, and I frequently build full ecosystems including APIs, authentication, cloud infrastructure, automation scripts, containerized environments and scalable architectures. I enjoy creating efficient solutions, designing clean interfaces and optimizing performance."
-      },
-      testimonials: {
-        title: "What Clients Say",
-        quote1:
-          "Delivers complete solutions — from backend logic to polished UI — with exceptional quality.",
-        quote2:
-          "Highly versatile developer. Worked across React, Django, Docker and deployment with zero friction.",
-        quote3:
-          "Professional, fast and proactive. Always finds the right technical approach."
       },
       contact: {
         title: "Let’s work together",
@@ -51,13 +41,12 @@ const resources = {
       nav: {
         portfolio: "Portfólio",
         about: "Sobre",
-        testimonials: "Testemunhos",
         contact: "Contacto"
       },
       hero: {
-        title: "Full-stack developer que desenvolve apps e sistemas completos.",
+        title: "ClawDao — Desenvolvimento full-stack",
         subtitle:
-          "Crio soluções web, mobile e backend com React, Django, Laravel, Flutter e ferramentas modernas como Docker, Nginx e Proxmox.",
+          "Soluções de ponta a ponta: desde web e mobile até backends e APIs escaláveis. React, Django, Laravel, Flutter — com Docker, Nginx e Proxmox para deploy e infraestrutura.",
         cta: "Ver Projetos"
       },
       portfolio: {
@@ -69,15 +58,6 @@ const resources = {
         title: "Sobre Mim",
         content:
           "Sou um programador versátil com experiência em múltiplas linguagens e frameworks. Domino React, Django, Python, TypeScript, Laravel, Flutter e também desenvolvo APIs, sistemas de autenticação, integrações complexas, automações, soluções empresariais e plataformas completas. Trabalho frequentemente com Docker, Nginx, Proxmox, servidores próprios e pipelines otimizadas. Gosto de criar interfaces eficientes, código limpo e soluções escaláveis."
-      },
-      testimonials: {
-        title: "O que dizem os clientes",
-        quote1:
-          "Entrega soluções completas — backend, frontend e UI — com excelente qualidade.",
-        quote2:
-          "Desenvolvedor extremamente versátil. Trabalhou com React, Django, Docker e deploy sem qualquer problema.",
-        quote3:
-          "Profissional, rápido e proativo. Encontra sempre a solução técnica ideal."
       },
       contact: {
         title: "Vamos trabalhar juntos",

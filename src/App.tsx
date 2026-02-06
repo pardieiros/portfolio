@@ -7,18 +7,18 @@ import { useTranslation } from "react-i18next";
 export default function App() {
   const { t } = useTranslation();
   return (
-    <div>
+    <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)]">
       <Navbar />
-      <main>
+      <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/privacypolice" element={<PrivacyPolicy />} />
         </Routes>
       </main>
-      <footer className="mt-24 border-t border-white/10 py-8">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 text-xs text-neutral-400">
-          <span>© {new Date().getFullYear()} Portfolio</span>
-          <span>{t("footer.rights")}</span>
+      <footer className="mt-24 border-t py-8" style={{ borderColor: "var(--border)" }}>
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 text-xs sm:flex-row sm:gap-0">
+          <span className="text-[var(--text-secondary)]">© {new Date().getFullYear()} ClawDao</span>
+          <span className="text-[var(--text-secondary)]">{t("footer.rights")}</span>
         </div>
       </footer>
     </div>
