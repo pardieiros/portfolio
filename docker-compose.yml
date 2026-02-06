@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: portfolio:latest
+    ports:
+      - "3007:80"
+    container_name: portfolio
+    restart: unless-stopped
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

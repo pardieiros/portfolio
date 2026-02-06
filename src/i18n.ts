@@ -11,30 +11,34 @@ const resources = {
         contact: "Contact"
       },
       hero: {
-        title: "Crafting clean, modern web experiences.",
+        title: "Full-stack developer building powerful apps and digital systems.",
         subtitle:
-          "I build fast, accessible and beautiful interfaces with React, TypeScript and Tailwind CSS.",
+          "I develop web, mobile and backend solutions using React, Django, Laravel, Flutter and modern DevOps tools such as Docker, Nginx and Proxmox.",
         cta: "View Work"
       },
       portfolio: {
-        title: "Selected Work",
-        subtitle: "A snapshot of projects and visuals I’ve worked on."
+        title: "Featured Projects",
+        subtitle:
+          "A collection of applications, automations and digital solutions I’ve engineered."
       },
       about: {
         title: "About Me",
         content:
-          "I am a frontend engineer focused on scalable design systems, delightful UX and maintainable codebases. I love motion micro-interactions and performance."
+          "I'm a multi-disciplinary developer skilled in frontend, backend and mobile development. I work with React, Django, Flask, Laravel, Flutter and TypeScript, and I frequently build full ecosystems including APIs, authentication, cloud infrastructure, automation scripts, containerized environments and scalable architectures. I enjoy creating efficient solutions, designing clean interfaces and optimizing performance."
       },
       testimonials: {
         title: "What Clients Say",
         quote1:
-          "Delivered above expectations and ahead of schedule. Great attention to detail.",
-        quote2: "Seamless collaboration and outstanding UI quality.",
-        quote3: "A true professional. Will work together again."
+          "Delivers complete solutions — from backend logic to polished UI — with exceptional quality.",
+        quote2:
+          "Highly versatile developer. Worked across React, Django, Docker and deployment with zero friction.",
+        quote3:
+          "Professional, fast and proactive. Always finds the right technical approach."
       },
       contact: {
         title: "Let’s work together",
-        subtitle: "Have a project in mind? I’d love to hear about it.",
+        subtitle:
+          "Need a website, an app, a backend system or automations? I’d love to help.",
         emailCta: "Email Me"
       },
       footer: {
@@ -51,30 +55,34 @@ const resources = {
         contact: "Contacto"
       },
       hero: {
-        title: "Crio experiências web modernas e limpas.",
+        title: "Full-stack developer que desenvolve apps e sistemas completos.",
         subtitle:
-          "Construo interfaces rápidas, acessíveis e bonitas com React, TypeScript e Tailwind CSS.",
-        cta: "Ver Trabalhos"
+          "Crio soluções web, mobile e backend com React, Django, Laravel, Flutter e ferramentas modernas como Docker, Nginx e Proxmox.",
+        cta: "Ver Projetos"
       },
       portfolio: {
-        title: "Trabalhos Selecionados",
-        subtitle: "Uma amostra de projetos e visuais em que trabalhei."
+        title: "Projetos em Destaque",
+        subtitle:
+          "Uma seleção de aplicações, automações e sistemas digitais que desenvolvi."
       },
       about: {
         title: "Sobre Mim",
         content:
-          "Sou engenheiro frontend focado em design systems escaláveis, UX de excelência e código sustentável. Adoro micro-interações e performance."
+          "Sou um programador versátil com experiência em múltiplas linguagens e frameworks. Domino React, Django, Python, TypeScript, Laravel, Flutter e também desenvolvo APIs, sistemas de autenticação, integrações complexas, automações, soluções empresariais e plataformas completas. Trabalho frequentemente com Docker, Nginx, Proxmox, servidores próprios e pipelines otimizadas. Gosto de criar interfaces eficientes, código limpo e soluções escaláveis."
       },
       testimonials: {
         title: "O que dizem os clientes",
         quote1:
-          "Entregou acima do esperado e antes do prazo. Grande atenção ao detalhe.",
-        quote2: "Colaboração perfeita e UI de excelente qualidade.",
-        quote3: "Um verdadeiro profissional. Voltaremos a trabalhar juntos."
+          "Entrega soluções completas — backend, frontend e UI — com excelente qualidade.",
+        quote2:
+          "Desenvolvedor extremamente versátil. Trabalhou com React, Django, Docker e deploy sem qualquer problema.",
+        quote3:
+          "Profissional, rápido e proativo. Encontra sempre a solução técnica ideal."
       },
       contact: {
         title: "Vamos trabalhar juntos",
-        subtitle: "Tem um projeto em mente? Gostava de saber mais.",
+        subtitle:
+          "Precisa de um website, app, backend ou automações? Posso ajudar.",
         emailCta: "Enviar Email"
       },
       footer: {

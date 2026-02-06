@@ -2,15 +2,16 @@ type Item = {
   small: string;
   large: string;
   title: string;
+  url?: string;
 };
 
 const portfolioItems: Item[] = [
-  { small: "/img/portfolio/01-small.jpg", large: "/img/portfolio/01-large.jpg", title: "Portal do Trabalhador" },
-  { small: "/img/portfolio/02-small.jpg", large: "/img/portfolio/02-large.jpg", title: "SaaS" },
+  { small: "/img/portfolio/01-small.jpg", large: "/img/portfolio/01-large.jpg", title: "Portal do Trabalhador", url: "https://plasticemployers.duckcdns.org" },
+  { small: "/img/portfolio/02-small.jpg", large: "/img/portfolio/02-large.jpg", title: "SaaS", url: "https://plastic.floow.pt" },
   { small: "/img/portfolio/03-small.jpg", large: "/img/portfolio/03-large.jpg", title: "Projectos com IA e RAG" },
-  { small: "/img/portfolio/04-small.jpg", large: "/img/portfolio/04-large.jpg", title: "Koala Club" },
-  { small: "/img/portfolio/05-small.jpg", large: "/img/portfolio/05-large.jpg", title: "Djelo" },
-  { small: "/img/portfolio/06-small.jpg", large: "/img/portfolio/06-large.jpg", title: "WorkTrace" }
+  { small: "/img/portfolio/04-small.jpg", large: "/img/portfolio/04-large.jpg", title: "Koala Club", url: "https://koalaclub.pt" },
+  { small: "/img/djelo-sem-fundo.png", large: "/img/djelo-sem-fundo.png", title: "Djelo", url: "https://pardieirosdeveloper.zapto.org/djelo/" },
+  { small: "/img/worktrace_logo_128px.png", large: "/img/worktrace_logo_128px.png", title: "WorkTrace", url: "https://pardieirosdeveloper.zapto.org/worktrace/" }
 ];
 
 export default function PortfolioGrid() {
@@ -19,7 +20,7 @@ export default function PortfolioGrid() {
       {portfolioItems.map((item) => (
         <a
           key={item.large}
-          href={item.large}
+          href={item.url || item.large}
           className="card card-hover group block overflow-hidden"
           target="_blank"
           rel="noreferrer"

@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
@@ -13,11 +14,11 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-neutral-950/70 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <a href="#" className="font-semibold tracking-tight">
+        <Link to="/" className="font-semibold tracking-tight">
           <span className="bg-gradient-to-r from-blue-400 to-fuchsia-400 bg-clip-text text-transparent">
             Portfolio
           </span>
-        </a>
+        </Link>
         <nav className="hidden gap-6 text-sm text-neutral-300 md:flex">
           <a href="#portfolio" className="hover:text-white">
             {t("nav.portfolio")}
@@ -31,6 +32,9 @@ export default function Navbar() {
           <a href="#contact" className="hover:text-white">
             {t("nav.contact")}
           </a>
+          <Link to="/privacypolice" className="hover:text-white">
+            Privacy Policy
+          </Link>
         </nav>
         <div className="flex items-center gap-2">
           <button
@@ -75,6 +79,9 @@ export default function Navbar() {
             <a href="#contact" onClick={() => setOpen(false)}>
               {t("nav.contact")}
             </a>
+            <Link to="/privacypolice" onClick={() => setOpen(false)}>
+              Privacy Policy
+            </Link>
           </nav>
         </div>
       )}

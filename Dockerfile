@@ -24,6 +24,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy built static assets from the builder stage
 COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/img /usr/share/nginx/html/img
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
